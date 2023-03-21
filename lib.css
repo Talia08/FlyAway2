@@ -1,6 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Lato:wght@300&family=Raleway:ital@1&display=swap');
+
 header{
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     justify-content: space-between;
+}
+
+header ul{
+    margin-top: 15px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #FDFFFC;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: auto;
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: auto;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: auto;
+}
+
+p{
+    font-size: 20px;
+    line-height: auto;
 }
 
 header li{
@@ -8,7 +44,7 @@ header li{
     margin-right: 20px;
 }
 
-button{
+.btn-rouge{
     height: 40px;
     width: 130px;
     border: solid 2px;
@@ -18,9 +54,91 @@ button{
     background-color: white;
 }
 
-button:hover{
+.btn-rouge:hover{
     color: white;
     border: solid 2px;
     background-color: #E85D04;
     border-radius: 5px;
+}
+
+.logo{
+    height: 40px;
+    margin-top: 5px;
+}
+
+header input{
+    border-radius: 5px;
+    border: solid 2px #E85D04;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-right: 150px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.search{
+    display: flex;
+    gap: 15px;
+}
+
+.icone-search{
+    width: 20px;
+    margin-top: 15px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #03071E;
+    padding: 15px;
+    line-height: 30px;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer label{
+    color: white;
+    font-size: smaller;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a.propos{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-compte{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+footer input{
+    padding: 5px;
+    border: solid 2px #E85D04;
+    border-radius: 3px;
+}
+
+footer input[type="submit"]{
+    border-color: #E85D04;
+    color: #E85D04;
+    border-radius: 3px;
+    background-color: white;
+}
+
+footer input[type="submit"]:hover{
+    background-color: #E85D04;
+    color: white;
+    border-radius: 3px;
+}
+
+fooer input[type="text"]{
+    padding-right: 80px;
 }
