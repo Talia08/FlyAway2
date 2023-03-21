@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header li{
+    display: inline;
+    margin-right: 20px;
+}
+
+button{
+    height: 40px;
+    width: 130px;
+    border: solid 2px;
+    border-color: #E85D04;
+    color: #E85D04;
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover{
+    color: white;
+    border: solid 2px;
+    background-color: #E85D04;
+    border-radius: 5px;
+}
