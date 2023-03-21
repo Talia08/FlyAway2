@@ -31,6 +31,7 @@ h2{
 
 h3{
     font-size: 32px;
+    margin-bottom: 25px;
     font-weight: bold;
     line-height: auto;
 }
@@ -55,11 +56,20 @@ header li{
     background-color: white;
 }
 
+.btn-rouge a{
+    text-decoration: none;
+    color: #E85D04;
+}
+
 .btn-rouge:hover{
     color: white;
     border: solid 2px;
     background-color: #E85D04;
     border-radius: 5px;
+}
+
+.btn-rouge a:hover{
+    color: white;
 }
 
 .logo{
@@ -86,7 +96,10 @@ header input{
     margin-top: 15px;
 }
 
+/*Footer*/
+
 footer{
+    margin-top: 250px;
     display: flex;
     justify-content: space-between;
     background-color: #03071E;
@@ -139,6 +152,6 @@ footer input[type="submit"]:hover{
     border-radius: 3px;
 }
 
-fooer input[type="text"]{
+footer input[type="text"]{
     padding-right: 80px;
 }

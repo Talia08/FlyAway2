@@ -5,6 +5,305 @@ main{
 
 .story{
     padding: 20px;
+    margin-bottom: 150px;
     background-color: #03071E;
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story1 .icone-story{
+    width: 35px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.story2 .icone-story2{
+    width: 35px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.story3 .icone-story3{
+    width: 35px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.story4 .icone-story4{
+    width: 35px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.story5 .icone-story5{
+    width: 35px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.add-story .icone-post{
+    position: absolute;
+    align-items: center;
+}
+
+.add-story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+}
+
+.add-story a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-story a:hover{
+    color: #E85D04;
+}
+
+.add-story li{
+    list-style: none;
+    position: absolute;
+    margin-top: 190px;
+}
+
+.publication{
+    display: flex;
+    justify-content: space-between;
+}
+
+.compte{
+    display: flex;
+    flex-direction: column;
+}
+
+.compte h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.compte1{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icone-compte1{
+    margin-right: 15px;
+}
+
+span{
+    color: gray;
+    font-size: smaller;
+}
+
+.compte2{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icone-compte2{
+    margin-right: 15px;
+}
+
+.compte3{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icone-compte3{
+    margin-right: 15px;
+}
+
+.compte4{
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.icone-compte4{
+    margin-right: 15px;
+}
+
+.catégories{
+    display:inline-table;
+    margin-bottom: 45px;
+    margin-left: 20px;
+}
+
+.catégories .btn-rouge{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+.contact1{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icone-contact1{
+    margin-right: 15px;
+}
+
+.contact2{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.icone-contact2{
+    margin-right: 15px;
+}
+
+.post{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 120px;
+}
+
+.post1 .icone-avatar1{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 40px;
+}
+
+.post1{
+    position: relative;
+    background-color: #03071E;
+    border-radius: 10px;
+    padding: 3px;
+    width: 350px;
+}
+
+.post1 .img1{
+    height: 500px;
+    width: 350px;
+}
+
+.post1 p{
+    color: white;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+.icone-post{
+    margin-bottom: 10px;
+}
+
+.icone-post .icone1{
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 20px;
+}
+
+.icone-post .icone2{
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 20px;
+}
+
+.icone-post .icone3{
+    width: 20px;
+}
+
+.post2{
+    position: relative;
+    background-color: #03071E;
+    border-radius: 10px;
+    padding: 3px;
+    width: 350px;
+}
+
+.post2 .icone-avatar2{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 40px;
+}
+
+.post2 p{
+    line-height: 30px;
+    color: white;
+    margin-left: 5px;
+}
+
+.post2 .img2{
+    height: 500px;
+    width: 350px;
+}
+
+hr{
+    width: 1px;
+    margin-left: 55px;
+    border-color: #03071E;
+    background-color: #03071E;
+    height: 820px;
+}
+
+.post3{
+    position: relative;
+    background-color: #03071E;
+    border-radius: 10px;
+    padding: 3px;
+    width: 350px;  
+}
+
+.post3 .icone-avatar3{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 40px;
+}
+
+.post3 p{
+    line-height: 30px;
+    color: white;
+    margin-left: 5px;
+}
+
+.post3 .img3{
+    height: 500px;
+    width: 350px;
+}
+
+.post4{
+    position: relative;
+    background-color: #03071E;
+    border-radius: 10px;
+    padding: 3px;
+    width: 350px;  
+}
+
+.post4 .icone-avatar4{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 40px;
+}
+
+.post4 p{
+    line-height: 30px;
+    color: white;
+    margin-left: 5px;
+}
+
+.post4 .img4{
+    height: 500px;
+    width: 350px; 
 }
