@@ -5,6 +5,7 @@ header{
     padding-right: 10px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 header ul{
@@ -73,7 +74,6 @@ header input{
     padding-top: 5px;
     padding-right: 150px;
     padding-bottom: 5px;
-    text-align: center;
 }
 
 .search{
