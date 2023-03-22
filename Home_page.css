@@ -170,7 +170,7 @@ span{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 190px;
+    grid-gap: 130px;
 }
 
 .post1 .icone-avatar1{
