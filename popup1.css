@@ -1,37 +1,83 @@
 .popup1{
     position: relative;
-    width: 60%;
+    width: 50%;
+    height: 300px;
     display: flex;
     border: solid 1px #E85D04;
     border-radius: 15px;
     padding: 1px;
 }
 
-.comment1{
-    height: 250px;
+.popup1 .comment1{
+    height: 300px;
     width: 450px;
     margin-right: 25px;
     border-radius: 15px 0px 0px 15px;
 }
 
-.close-btn{
+.popup1 .close-btn{
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 10px;
+    margin-top: 7px;
     margin-right: 10px;
+    border: solid 1px;
+    border-color: #E85D04;
+    border-radius: 3px;
+    color: #E85D04;
 }
 
-.comment-avatar1{
+.popup1 .close-btn:hover{
+    color: white;
+    background-color: #E85D04;
+}
+
+.popup1 .comment-avatar1{
     margin-top: 10px;
     margin-right: 15px;
 }
 
-.comment-pseudo1{
+.popup1 .comment-pseudo1{
     display: flex;
     margin-bottom: 15px;
 }
 
-.comment-pseudo1 p{
+.popup1 .comment-pseudo1 p{
     margin-top: 25px;
+    margin-right: 15px;
+}
+
+.popup1 .comment-pseudo1 .btn-rouge{
+    height: 30px;
+    width: 100px;
+    margin-top: 22px;
+    border: solid 1px;
+}
+
+.popup1 hr{
+    width: 480px;
+}
+
+.popup1 input[type="text"]{
+    padding: 5px;
+    width: 300px;
+    border: solid 1px;
+    border-radius: 5px;
+    border-color: #E85D04;
+}
+
+.popup1 input[type="submit"]{
+    margin-left: 5px;
+    padding: 5px;
+    width: 70px;
+    border: solid 1px #E85D04;
+    border-radius: 5px;
+    border-color: #E85D04;
+    color: #E85D04;
+    background-color: white;
+}
+
+.popup1 input[type="submit"]:hover{
+    color: white;
+    background-color: #E85D04;
 }
