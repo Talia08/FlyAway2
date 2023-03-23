@@ -1,0 +1,50 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.connexion{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+}
+
+.connexion input{
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    border: solid 2px #E85D04;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.connexion input[type="text"]{
+    width: 280px;
+}
+
+.connexion input[type="number"]{
+    width: 280px;
+}
+
+.connexion input[type="submit"]{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 40px;
+}
+
+.connexion input[type="submit"]:hover{
+    color: white;
+    background-color: #E85D04;
+}
+
+.connexion a{
+    color: #E85D04;
+}
+
+h1{
+    margin-bottom: 100px;
+    margin-top: 200px;
+}

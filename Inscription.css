@@ -1,0 +1,46 @@
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1{
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.inscription{
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+}
+
+.inscription input{
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    border: solid 2px #E85D04;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inscription input[type="text"]{
+    width: 280px;
+}
+
+.inscription input[type="number"]{
+    width: 280px;
+}
+
+.inscription input[type="submit"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 40px;
+}
+
+.inscription input[type="submit"]:hover{
+    color: white;
+    background-color: #E85D04;
+}
