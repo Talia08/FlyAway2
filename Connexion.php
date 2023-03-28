@@ -2,36 +2,26 @@
 
 include('init.php');
 
-// Si la session membre existe : (Si on est déjà conecté cette fonction permet de rendre la page connexion inacessible à l'utilisateur)
 if(isset($_SESSION['membre'])){
     header('location:index.php');
 }
 
-// Si le formulaire a été posté
 if($_POST){
     $erreur ='';
-    // Je récupère en base de données les infos correspondantezs à l'adresse mail rentrée par l'internaute :
     $r = $pdo->query("SELECT * FROM membre WHERE email = '$_POST[email]'");
-    // s'il il y a un ou plusieurs résultat, c'est que le compte existe :
     if($r->rowCount() >= 1){
-        //Connexion :
         $membre = $r->fetch(PDO::FETCH_ASSOC);
-        //var_dump($membre);
-        //Je vérifie si le mot de passe est correcte :
         if(password_verify($_POST['mdp'], $membre['mdp'])){
-            // Enregistre les infos dans la session :
             $_SESSION['membre']['nom'] = $membre['nom'];
             $_SESSION['membre']['prenom'] = $membre['prenom'];
             $_SESSION['membre']['email'] = $membre['email'];
-            //Je redirige l'internaute vers l'index :
             header('location:index.php');
         }else {
-            $erreur .= '<p>Mauvais mot de passe</p>'; // .= correspond à ajouter
+            $erreur .= '<p>Mauvais mot de passe</p>';
         }
     }else{
         $erreur .= '<p>Compte innexistant.</p>';
     }
-    // J'ajoute les messages d'erreur à la variable content :
     $content .= $erreur;
 }
 

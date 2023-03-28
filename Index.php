@@ -1,6 +1,6 @@
 <?php
 
-include('init.php'); // Permet de relier le fichier index.php au fichier init.php grâce à la fonction include()
+include('init.php'); 
 
 ?>
 <!DOCTYPE html>
@@ -13,9 +13,7 @@ include('init.php'); // Permet de relier le fichier index.php au fichier init.ph
 <body>
     
     <?php
-    // Si l'internaute est connecté :
     if(isset($_SESSION['membre'])){
-        // J'affiche un lien de déconnexion :
     ?>
     <a href="?action=deconnexion">Déconnexion</a>
     <h2>Bonjour <?php echo $_SESSION['membre']['prenom']; ?></h2>
