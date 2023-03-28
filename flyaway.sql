@@ -3,15 +3,13 @@
 -- Création de la base de données --
 CREATE DATABASE flyaway;
 
--- Création de la table user --
-CREATE TABLE user (
+-- Création de la table membre --
+CREATE TABLE membre (
     id INT NULL AUTO_INCREMENT,
-    mail VARCHAR(50) NULL,
-    login VARCHAR(50) NULL,
-    profilPicture VARCHAR(50) NULL,
+    mail VARCHAR(50) NOT NULL,
+    mdp VARCHAR(50) NULL,
     firstname VARCHAR(50) NULL,
     lastname VARCHAR(50) NULL,
-    status VARCHAR(100) NULL,
     PRIMARY KEY id (id)
 ) ENGINE=InnoDB;
 
