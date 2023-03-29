@@ -6,10 +6,11 @@ CREATE DATABASE flyaway;
 -- Création de la table membre --
 CREATE TABLE membre (
     id INT NULL AUTO_INCREMENT,
-    mail VARCHAR(50) NOT NULL,
-    mdp VARCHAR(50) NULL,
     firstname VARCHAR(50) NULL,
     lastname VARCHAR(50) NULL,
+    birth_date INT NOT NULL,
+    mail VARCHAR(50) NOT NULL,
+    mdp VARCHAR(50) NULL,
     PRIMARY KEY id (id)
 ) ENGINE=InnoDB;
 

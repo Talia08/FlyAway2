@@ -44,3 +44,7 @@ h1{
     color: white;
     background-color: #E85D04;
 }
+
+.inscription input[type="date"]{
+    width: 280px;
+}

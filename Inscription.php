@@ -66,6 +66,10 @@ if($_POST){
         <form class="inscription" method="post">
             <input type="text" placeholder="Nom et prénom" required>
             <br>
+            <input type="date" placeholder="Date de naissance" required>
+            <br> 
+            <input type="number" placeholder="Téléphone" required>
+            <br>
             <input type="text" placeholder="Adresse Mail" required>
             <br>
             <input type="number" placeholder="Mot de passe" required>
