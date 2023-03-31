@@ -4,10 +4,14 @@ main{
     transition: 0ms ease-in-out 300ms;
 }
 
+.title-story{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
 .container{
-    padding: 2rem;
-    display: flex;
-    margin-bottom: 150px;
+    margin: 0 auto;
+    margin-bottom: 200px;
 }
 
 .slider-wrapper{
@@ -74,6 +78,15 @@ main{
 .compte1{
     display: flex;
     margin-bottom: 15px;
+}
+
+.compte1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.compte1 a:hover{
+    color: #E85D04;
 }
 
 .icone-compte1{
