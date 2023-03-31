@@ -78,6 +78,10 @@ header li{
     margin-top: 5px;
 }
 
+.menu-burger{
+    display: none;
+}
+
 header input{
     border-radius: 5px;
     border: solid 2px #E85D04;
@@ -155,4 +159,34 @@ footer input[type="submit"]:hover{
 
 footer input[type="text"]{
     padding-right: 80px;
+}
+
+/* Partie Responsive : */
+
+/* Header responsive */
+
+@media screen and (max-width: 600px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+     header ul{
+        display: none;
+    }
+
+    .search{
+        display: none;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    footer ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

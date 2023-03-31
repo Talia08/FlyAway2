@@ -436,3 +436,141 @@ body.active-popup1 .popup1{
                opacity: 300ms ease-in-out;
                margin-top: 300ms ease-in-out ;
 }
+
+/* Partie responsive */
+
+@media screen and (max-width: 600px){
+    @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Inter:wght@300&display=swap');
+
+    body{
+        overflow-x: hidden;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    main{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    .story{
+        width: auto;
+        height: 210px;
+        margin-bottom: 150px;
+    }
+    
+    .img-story{
+        width: 150px;
+    }
+
+    .publication{
+        flex-direction: column-reverse;
+    }
+
+    .publication hr{
+        display: none;
+    }
+
+    .post{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post1{
+        width: auto;
+    }
+
+    .post1 .img1{
+        max-width: 100%;
+    }
+
+    .post2{
+        width: auto;
+    }
+
+    .post2 .img2{
+        max-width: 100%;
+    }
+
+    .post3{
+        width: auto;
+    }
+
+    .post3 .img3{
+        max-width: 100%;
+    }
+
+    .post4{
+        width: auto;
+    }
+
+    .post4 .img4{
+        max-width: 100%;
+    }
+
+    .compte{
+        margin-top: 80px;
+    }
+
+    .compte1{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .compte1 .icone-compte1{
+        width: 45px;
+    }
+
+    .compte2{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .compte2 .icone-compte2{
+        width: 45px;
+    }
+
+    .compte3{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .compte .icone-compte3{
+        width: 45px;
+    }
+
+    .compte4{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .compte4 .icone-compte4{
+        width: 45px;
+    }
+
+    .catégories{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .contact{
+        margin: 0 auto;
+    }
+
+    .icone-contact1{
+        width: 45px;
+    }
+
+    .icone-contact2{
+        width: 45px;
+    }
+
+}
