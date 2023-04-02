@@ -1,29 +1,12 @@
 <?php
 
-include('init.php'); 
-if(isset($_SESSION['membre'])){
+$user = 'root';
+$pass = '';
+$database = 'formulaire_inscription';
 
-    header('location:index.php');
-}
-if($_POST){
-    $erreur ='';
-    if(strlen($_POST['prenom']) <= 2 || strlen($_POST['prenom']) > 20){
-        $erreur .= '<p>Votre prenom est trop court ou trop long.</p>';
-    }
-    $r = $pdo->query("SELECT * FROM membre WHERE email = '$_POST[email]'");
-    if($r->rowCount() >= 1){
-        $erreur .= '<p>Compte déjà existant.</p>';
-    }
-    foreach($_POST as $indice => $valeur){
-        $_POST[$indice] = addslashes($valeur);
-    }
-    $_POST['mdp'] = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
-    if(empty($erreur)){
-        $pdo->exec("INSERT INTO membre (nom, prenom, email, mdp) VALUES ('$_POST[nom]', '$_POST[prenom]', '$_POST[email]', '$_POST[mdp]')");
-        $content .= '<p>Votre inscription a bien été prise en compte !</p>';
-    }
-    $content .= $erreur;
-}
+$query = mysqli_connect($_SERVER, $user, $pass, $database)
+
+if()
 
 ?>
 
@@ -36,6 +19,7 @@ if($_POST){
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Lato:wght@300&family=Raleway:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="lib.css">
+    <link rel="stylesheet" href="Init.php">
     <link rel="stylesheet" href="Inscription.css">
     <title>Inscription</title>
 </head>
