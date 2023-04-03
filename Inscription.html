@@ -31,16 +31,27 @@
 
     <main>
         <h1>Inscrit-toi à FlyAway</h1>
-        <form class="inscription" method="post">
-            <input type="text" placeholder="Nom et prénom" required>
+        <form class="inscription" action="Inscription.php" method="post">
+            <input type="text" name="prenom" placeholder="Prenom" required>
             <br>
-            <input type="date" placeholder="Date de naissance" required>
-            <br> 
-            <input type="number" placeholder="Téléphone" required>
+            <input type="text" name="nom" placeholder="Nom" required>
             <br>
-            <input type="text" placeholder="Adresse Mail" required>
+            <input type="date" name="date_naissance" placeholder="Date de naissance" required>
             <br>
-            <input type="number" placeholder="Mot de passe" required>
+            <input type="number" name="telephone" placeholder="Téléphone" required>
+            <br>
+            <input type="email" name="adresse_mail" placeholder="Adresse Mail" required>
+            <br>
+            <label for="sexe">Sexe:</label>
+            <select name="sexe" id="sexe" required>
+                <option value="">--Choisir une option--</option>
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+            </select>
+            <br>
+            <br>
+            <input type="password" name="mot_de_passe" placeholder="Mot de passe" required>
             <br>
             <input type="submit" value="Inscription">
         </form>
